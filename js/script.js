@@ -24,10 +24,26 @@ if (playerInput == 1) {
     playerMove = 'papier';
 } else if (playerInput == 3) {
     playerMove = 'nożyce';
-} else {
-    printMessage('Nie zgrywaj cwaniaka. Przegrywasz walkowerem');
 }
 
 printMessage('Twój ruch to: ' + playerMove);
 
 printMessage('Mój ruch to: ' + computerMove);
+
+if (computerMove == 'kamień' && playerMove == 'papier') {
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'kamień' && playerMove == 'nożyce') {
+    printMessage('Wygrywam!');
+} else if (computerMove == 'papier' && playerMove == 'kamień') {
+    printMessage('Wygrywam!');
+} else if (computerMove == 'papier' && playerMove == 'nożyce') {
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'nożyce' && playerMove == 'kamień') {
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'nożyce' && playerMove == 'papier') {
+    printMessage('Wygrywam!');
+} else if (computerMove == playerMove) {
+    printMessage('Remis!');
+} else {
+    printMessage('Nie umiesz czytać?! Przegrywasz walkowerem.');
+}
