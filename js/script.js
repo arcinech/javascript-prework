@@ -1,3 +1,5 @@
+let computerwin = 0;
+
 function playGame(playerInput) {
 
     clearMessages();
@@ -9,10 +11,10 @@ function playGame(playerInput) {
             return 'papier';
         } else if (argMoveId == 3) {
             return 'nożyce';
+        } else {
+            printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+            return 'nieznany ruch';
         }
-
-        printMessage('Nie znam ruchu o id ' + argMoveId + '.');
-        return 'nieznany ruch';
     }
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
