@@ -3,7 +3,6 @@ function playGame(playerInput) {
     clearMessages();
 
     function getMoveName(argMoveId) {
-        console.log('Wybrano id:' + argMoveId);
         if (argMoveId == 1) {
             return 'kamień';
         } else if (argMoveId == 2) {
@@ -18,7 +17,7 @@ function playGame(playerInput) {
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-    console.log('Wylosowana liczba to: ' + randomNumber);
+    console.log('Wylosowana liczba to: 3' + randomNumber);
 
     let computerMove = getMoveName(randomNumber);
 
