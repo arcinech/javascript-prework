@@ -24,6 +24,8 @@ if (playerInput == 1) {
     playerMove = 'papier';
 } else if (playerInput == 3) {
     playerMove = 'nożyce';
+} else {
+    printMessage('Nie znam takiego ruchu.');
 }
 
 printMessage('Twój ruch to: ' + playerMove);
