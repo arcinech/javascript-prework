@@ -1,10 +1,9 @@
-let computerwin = 0;
-
 function playGame(playerInput) {
 
     clearMessages();
 
     function getMoveName(argMoveId) {
+        console.log('Wybrano id:' + argMoveId);
         if (argMoveId == 1) {
             return 'kamień';
         } else if (argMoveId == 2) {
@@ -26,7 +25,6 @@ function playGame(playerInput) {
     console.log('Gracz wpisał: ' + playerInput);
 
     let playerMove = getMoveName(playerInput);
-
 
     function displayResult(argComputerMove, argPlayerMove) {
         console.log('moves:', argComputerMove, argPlayerMove);
@@ -52,7 +50,6 @@ function playGame(playerInput) {
     }
 
     displayResult(computerMove, playerMove);
-
 }
 
 document.getElementById('play-rock').addEventListener('click', function() {
