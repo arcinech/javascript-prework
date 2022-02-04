@@ -28,9 +28,6 @@ let playerMove = 'nieznany ruch';
 
 playerMove= getMoveName(playerInput);
 
-printMessage('Twój ruch to: ' + playerMove);
-
-printMessage('Mój ruch to: ' + computerMove);
 
 function displayResult(argComputerMove, argPlayerMove) {
     console.log('moves:', argComputerMove, argPlayerMove);
