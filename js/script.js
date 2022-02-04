@@ -3,7 +3,6 @@ function playGame(playerInput) {
     clearMessages();
 
     function getMoveName(argMoveId) {
-        console.log('Wybrano id:' + argMoveId);
         if (argMoveId == 1) {
             return 'kamień';
         } else if (argMoveId == 2) {
