@@ -36,7 +36,7 @@ function displayResult(argComputerMove, argPlayerMove) {
     console.log('moves:', argComputerMove, argPlayerMove);
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
-    if (argComputerMove == 'kamień' && playerMove == 'papier') {
+    if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
         printMessage('Ty wygrywasz!');
     } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
         printMessage('Wygrywam!');
