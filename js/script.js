@@ -17,6 +17,7 @@ function playGame(playerInput) {
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
+<<<<<<< HEAD
     console.log('Wylosowana liczba to: ' + randomNumber);
 
     let computerMove = `nieznany ruch`;
@@ -28,12 +29,25 @@ function playGame(playerInput) {
     let playerMove = 'nieznany ruch';
 
     playerMove= getMoveName(playerInput);
+=======
+    console.log('Wylosowana liczba to: 2') + randomNumber;
+
+    let computerMove = getMoveName(randomNumber);
+
+    console.log('Gracz wpisał: ' + playerInput);
+
+    let playerMove = getMoveName(playerInput);
+>>>>>>> master
 
     function displayResult(argComputerMove, argPlayerMove) {
         console.log('moves:', argComputerMove, argPlayerMove);
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
+<<<<<<< HEAD
         if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
+=======
+        if (argComputerMove == 'kamień' && playerMove == 'papier') {
+>>>>>>> master
             printMessage('Ty wygrywasz!');
         } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
             printMessage('Wygrywam!');
@@ -63,4 +77,8 @@ document.getElementById('play-paper').addEventListener('click', function() {
 });
 document.getElementById('play-scissors').addEventListener('click', function() {
     playGame(3);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> master
